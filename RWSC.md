@@ -29,3 +29,5 @@ After downloading, I extracted strings from the file and found encoded content.
 Then, I utilized CyberChef to decode the content from base64.
 
 ![Decoding Content](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/d0c4307d-a45f-4dab-a880-b9481f258a5f)
+
+**Flag:** RWSC{p@ss123}
