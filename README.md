@@ -4,8 +4,6 @@ The challenge said that the flag is a WiFi password.
 
 Initially, I used Wireshark to analyze the network traffic, but it didn't yield any useful information. So, I turned to Aircrack-ng and utilized the rockyou wordlist to crack the WiFi password.
 
-After successfully cracking the password, I gained access to the network.
-
 ![WiFi Password Crack](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/5974e2a5-783b-4378-8f94-417464901c9c)
 
 **Flag:** RWSC{anonymous}
