@@ -1,31 +1,33 @@
-# Last Hope 
+# Last Hope
 
-The challenge was to uncover a hidden flag behind a WiFi password.
+The challenge said that the flag is a WiFi password.
 
- I started by using Wireshark to analyze the network traffic, but it didn't reveal anything useful.
- I then turned to Aircrack-ng and used the rockyou wordlist to crack the WiFi password.
+Initially, I used Wireshark to analyze the network traffic, but it didn't yield any useful information. So, I turned to Aircrack-ng and utilized the rockyou wordlist to crack the WiFi password.
 
+After successfully cracking the password, I gained access to the network.
 
-After running the cracking process, I successfully obtained the WiFi password and accessed the network.
-![image](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/5974e2a5-783b-4378-8f94-417464901c9c)
+![WiFi Password Crack](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/5974e2a5-783b-4378-8f94-417464901c9c)
 
-Flag : RWSC{anonymous}
-
+**Flag:** RWSC{anonymous}
 
 # Resign Letter
 
-The challenge give us .dotm type of file.
+This challenge provided a .dotm file.
 
-first i identify what is the .dotm file.
-![image](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/0ab10067-792f-41d8-849f-204431f1ccb4)
+Firstly, I identified the .dotm file type.
 
-and then i search on google and ask chatgpt anything that i can do with that type of file. and the i found .dotm file has macro. and the i find out that olevba from oletools can do the job.
-![image](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/b1febfb2-456d-494b-b6a1-0c83533e8a31)
+![Identifying .dotm File](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/0ab10067-792f-41d8-849f-204431f1ccb4)
 
-and then i get the link to download lenovo.exe from https://github.com/fareedfauzi/Adv_Sim/raw/main/lenovo.exe
+Then, through research and chatting with ChatGPT, I discovered that .dotm files contain macros and learned that olevba from oletools could assist in the task.
 
-and then i download it and strings the file and i got this
-![image](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/c3404724-61f8-462d-b36f-11cb853d592b)
+![Discovering Macros](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/b1febfb2-456d-494b-b6a1-0c83533e8a31)
 
-and then i go to cyberchef and decode it from base64
-![image](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/d0c4307d-a45f-4dab-a880-b9481f258a5f)
+Next, I obtained a download link for lenovo.exe from [here](https://github.com/fareedfauzi/Adv_Sim/raw/main/lenovo.exe).
+
+After downloading, I extracted strings from the file and found encoded content.
+
+![Extracting Strings](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/c3404724-61f8-462d-b36f-11cb853d592b)
+
+Then, I utilized CyberChef to decode the content from base64.
+
+![Decoding Content](https://github.com/loysz/RWSC-2024-Writeup/assets/116022013/d0c4307d-a45f-4dab-a880-b9481f258a5f)
